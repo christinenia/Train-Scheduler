@@ -1,0 +1,18 @@
+.jumbotron {
+    background: url("../images/background.jpg");
+    text-align: center;
+    color: black;
+}
+.currentTrain {
+    text-align: center;
+}
+
+.btn-secondary {
+    background-color: white;
+    border: white;
+    color: black;
+}
+.btn-secondary:hover {
+    background-color: rgb(173, 226, 230);
+    color: black;
+}

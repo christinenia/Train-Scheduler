@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<html lang="en-us">
+
+<head>
+<meta charset="UTF-8">
+<title>Train Scheduler</title>
+<!-- Added a link to Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- reset css -->
+<link rel="stylesheet" href="../Train-Scheduler/assets/css/reset.css">
+<!-- css -->
+<link rel="stylesheet" href="../Train-Scheduler/assets/css/style.css">
+<!-- favicon -->
+<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+<!-- Added a link to Font Awesome CDN-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- viewport thing -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class = "container-fluid">
+<div class ="jumbotron">
+    Train Scheduler
+    <br>
+    Today's date is <span id="current-info"></span>
+</div>  
+</div>
+<hr>
+<div class="container-fluid">
+<div class="panel panel-primary">
+<div class="currentTrain">Current Train Schedule
+<button type="button" class="btn btn-secondary btn-sm"><span class="glyphicon glyphicon-refresh"></span>Refresh</button>
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency (min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+            </tr>
+        </thead>
+        <tbody id="new-train"></tbody>
+    </table>
+</div>
+</div>
+</div>
+</div>
+<hr>
+
+<div class="addTrain"> Add Train </div>
+        <form>
+            <div class = "container-fluid">
+                <div class="form-group">
+                <label for="train-name">Train Name</label>
+                <input type="text" class="form-control" id="train-name" placeholder="Hogwarts Express">
+                </div>
+                <div class="form-group">
+                <label for="train-time">First Train Time (hh:mm / am/pm)</label>
+                <input type="time" class="form-control" id="train-time" placeholder="12:00">
+                </div>
+                <div class="form-group">
+                <label for="frequency">Frequency (min)</label>
+                <input type="text" class="form-control" id="frequency" placeholder="10">
+                </div>
+                <button class="btn btn-primary" id="add-train" type="submit">Submit</button>
+                <br>
+                <hr>
+                </div>
+        </form>
+        </div>
+<!-- <script src="/assets/js/train.js"></script> -->
+</body>
+</html>
+
