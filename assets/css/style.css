@@ -1,18 +1,48 @@
-.jumbotron {
+.entireBody {
     background: url("../images/background.jpg");
+    background-size: 100%;
+    background-color: black;
+    color: white;
+}
+.jumbotron {
+    opacity: 0.55;
     text-align: center;
     color: black;
+    font-size: 25px;
 }
 .currentTrain {
     text-align: center;
+    font-size: 25px;
 }
 
 .btn-secondary {
-    background-color: white;
-    border: white;
-    color: black;
+    opacity: 0.5;
+    color: white;
+    background-color: black;
+    border: black solid 2px;
 }
 .btn-secondary:hover {
-    background-color: rgb(173, 226, 230);
     color: black;
+}
+.addTrain {
+    text-align: center;
+    font-size: 25px;
+}
+
+.forms {
+    text-align: center;
+    align-content: center;
+    width: 75%;
+    margin: auto;
+}
+
+.container-fluid {
+    text-align: center;
+}
+
+.btn-primary {
+    opacity: 0.5;
+    color: white;
+    background-color: black;
+    border: black solid 2px;
 }

@@ -21,6 +21,7 @@
 
 <body>
 
+<div class="entireBody">
 <div class = "container-fluid">
 <div class ="jumbotron">
     Train Scheduler
@@ -55,26 +56,31 @@
 <hr>
 
 <div class="addTrain"> Add Train </div>
+<br>
         <form>
             <div class = "container-fluid">
-                <div class="form-group">
+                <div class="forms">
                 <label for="train-name">Train Name</label>
                 <input type="text" class="form-control" id="train-name" placeholder="Hogwarts Express">
                 </div>
-                <div class="form-group">
+                <br>
+                <div class="forms">
                 <label for="train-time">First Train Time (hh:mm / am/pm)</label>
                 <input type="time" class="form-control" id="train-time" placeholder="12:00">
                 </div>
-                <div class="form-group">
+                <br>
+                <div class="forms">
                 <label for="frequency">Frequency (min)</label>
                 <input type="text" class="form-control" id="frequency" placeholder="10">
                 </div>
+                <br>
                 <button class="btn btn-primary" id="add-train" type="submit">Submit</button>
                 <br>
                 <hr>
                 </div>
         </form>
         </div>
+    </div>
 <!-- <script src="/assets/js/train.js"></script> -->
 </body>
 </html>
