@@ -1,8 +1,14 @@
-.entireBody {
+@font-face {
+    font-family: "urban";
+    src: url("../images/The\ Urban\ Way.ttf");
+}
+body {
     background: url("../images/background.jpg");
     background-size: 100%;
     background-color: black;
     color: white;
+    font-family: urban;
+    height: 100%;
 }
 .jumbotron {
     opacity: 0.55;
