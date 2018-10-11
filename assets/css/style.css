@@ -5,50 +5,38 @@
 body {
     background: url("../images/background.jpg");
     background-size: 100%;
-    background-color: black;
-    color: white;
     font-family: urban;
     height: 100%;
 }
 .jumbotron {
-    opacity: 0.55;
+    opacity: 0.8;
     text-align: center;
-    color: black;
-    font-size: 25px;
-}
-.currentTrain {
-    text-align: center;
-    font-size: 25px;
-}
-
-.btn-secondary {
-    opacity: 0.5;
     color: white;
     background-color: black;
-    border: black solid 2px;
+    font-size: 30px;
 }
-.btn-secondary:hover {
-    color: black;
-}
-.addTrain {
+.card {
     text-align: center;
     font-size: 25px;
+    opacity: 0.8;
+    background-color: black;
+    color: white;
 }
 
-.forms {
-    text-align: center;
-    align-content: center;
-    width: 75%;
-    margin: auto;
+#trainTable {
+    font-size: 15px;
+    
+
 }
 
-.container-fluid {
-    text-align: center;
+.addTrain {
+    background-color: black;
+    color: white;
+    opacity: 0.8;
 }
 
 .btn-primary {
-    opacity: 0.5;
-    color: white;
     background-color: black;
-    border: black solid 2px;
+    opacity: 0.8;
+    border: black 2px solid;
 }

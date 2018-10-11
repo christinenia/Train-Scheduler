@@ -17,59 +17,63 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- viewport thing -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+<!-- Moment.js -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
 </head>
 
 <body>
-<div class ="jumbotron">
-    Train Scheduler
-    <br>
-    Today's date is <span id="current-info"></span>
-</div>  
-<br>
-<div class="panel panel-primary">
-<div class="currentTrain">Current Train Schedule
-<button type="button" class="btn btn-secondary btn-sm"><span class="glyphicon glyphicon-refresh"></span>Refresh</button>
+
+<div class="container">
+    
+<div class="jumbotron">
+Train Scheduler
+<br><br>
+Current Time: <span id="dateTime"></span>
 </div>
-<div class="table-responsive">
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Train Name</th>
-                <th>Destination</th>
-                <th>Frequency (min)</th>
-                <th>Next Arrival</th>
-                <th>Minutes Away</th>
-            </tr>
-        </thead>
-        <tbody id="new-train">
+
+<div class="card">
+<br>
+Current Train Schedule
+<hr>
+<table class="table table-hover" id="trainTable">
+<thead>
+<tr>
+    <th scope="col">Train Name</th>
+    <th scope="col">Destination</th>
+    <th scope="col">Frequency</th>
+    <th scope="col">Next Arrival</th>
+    <th scope="col">Minutes Away</th>
+    <th scope="col">Delete</th>
+</tr>
+</thead>
+</table>
+</div>
+
+<div class="newTrain">
+    <form>
+        <div class="addTrain">
+            <label for="trainNameText">Train Name</label>
+            <input type="text" class="form-control" id="trainNameText" aria-describedby="emailHelp">
+            <br>
+            <label for="destinationText">Destination</label>
+            <input type="text" class="form-control" id="destinationText">
+            <br>
+            <label for="firstTrainText">First Train Time (HH:mm)</label>
+            <input data-format="hh:mm" type="text" class="form-control" id="firstTrainText">
+            <br>
+            <label for="frequencyText">Frequency</label>
+            <input type="number" class="form-control" id="frequencyText">
+        </div>
+            <button type="submit" class="btn btn-primary rounded-0" id="addTrainBtn">Submit</button>
+    </form>
+</div>
+</div>
         
-        </tbody>
-    </table>
-</div>
-</div>
-<br>
-<div class="addTrain"> Add Train</div>
-<br> 
-<form>
-    <div class="forms">
-    <label for="trainName">Train Name</label>
-    <input type="text" class="form-control" id="trainName" placeholder="Hogwarts Express">
-    <br>
-    <label for="train-time">First Train Time (hh:mm / am/pm)</label>
-    <input type="time" class="form-control" id="train-time" placeholder="12:00">
-    <br>
-    <label for="frequency">Frequency (min)</label>
-    <input type="text" class="form-control" id="frequency" placeholder="10">
-    <br>
-    <button class="btn btn-primary" id="add-train" type="submit">Submit</button>
-    <br>
-
-    </div>
-</form>
-     
-
 <script src="/Users/cnyokoyama/Documents/UCLA/Homework/Train-Scheduler/assets/js/train.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+
 </body>
 </html>
 
