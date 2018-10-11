@@ -83,5 +83,3 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   $("#trainTable > tbody").append("<tr><td" + '<i class="fa fa-trash" aria-hidden="true"></i>' + "</td><td>" + train + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + nextArrival + "</td><td>" + minAway + "</td><tr>");
 })
 };
-
-setInterval(timeUpdate, 6000);
