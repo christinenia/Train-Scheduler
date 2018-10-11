@@ -13,20 +13,18 @@ body {
     text-align: center;
     color: white;
     background-color: black;
-    font-size: 30px;
+    font-size: 40px;
 }
 .card {
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     opacity: 0.8;
     background-color: black;
     color: white;
 }
 
 #trainTable {
-    font-size: 15px;
-    
-
+    font-size: 25px;   
 }
 
 .addTrain {
@@ -39,4 +37,9 @@ body {
     background-color: black;
     opacity: 0.8;
     border: black 2px solid;
+}
+
+.newTrain {
+    opacity: 0.8;
+    font-size: 25px;
 }
