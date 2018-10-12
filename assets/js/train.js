@@ -1,4 +1,10 @@
-// Initialize Firebase
+//psuedo code//
+//create a firebase database//
+//pull time information onto jumbotron of page//
+//create a table for the train information to appear//
+//create a table for the user to input new train information//
+//add music to page on load//
+
   var config = {
     apiKey: "AIzaSyDh0j9Ox8ScI-OLA6mwwlHZR2GbsQMev24",
     authDomain: "train-scheduler-cy.firebaseapp.com",
@@ -82,4 +88,9 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
   $("#trainTable > tbody").append("<tr><td" + '<i class="fa fa-trash" aria-hidden="true"></i>' + "</td><td>" + train + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + nextArrival + "</td><td>" + minAway + "</td><tr>");
 })
+
+// const music = new Audio("/Users/cnyokoyama/Documents/UCLA/Homework/Train-Scheduler/assets/come on ride the train.mp3");
+// $('#addTrainBtn').click(e => music.play());
+// console.log("play", music);
+
 };
