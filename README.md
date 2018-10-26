@@ -1,9 +1,10 @@
 # Train-Scheduler
+
+<a href="https://imgflip.com/gif/2l05ur"><img src="https://i.imgflip.com/2l05ur.gif" title="made at imgflip.com"/></a>
+
 Overview:
 
 In this assignment, I created a train schedule application that incorporates Firebase to host arrival and departure data. My app retrieves and manipulates this information with Moment.js. This website provides up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.
-
-<a href="https://imgflip.com/gif/2l05ur"><img src="https://i.imgflip.com/2l05ur.gif" title="made at imgflip.com"/></a>
 
 Instructions:
 Make sure that your app suits this basic spec:
